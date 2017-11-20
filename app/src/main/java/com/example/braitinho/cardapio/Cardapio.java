@@ -68,7 +68,7 @@ public class Cardapio implements Serializable, Comparable<Cardapio> {
 
     public String getFoto()
     {
-        String foto = nome.replace('@', '_');
+        String foto = nome.replace('A', 'a').replace("C", "c").replace("S", "s").replace("P", "p").replace("F", "f").replace("B", "b").replace("R", "r").replace("L", "l");
         return foto.replace('.', '_');
     }
 }
